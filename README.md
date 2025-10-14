@@ -1,49 +1,52 @@
-[中文](README-CN.md) | [English](README.md)
----
+- [Overview](#overview)
+  - [Chassis](#chassis)
+  - [Special Modes](#special-modes)
+  - [Robotic Arm](#robotic-arm)
+    - [Dual Arm Mode Configuration](#dual-arm-mode-configuration)
+    - [Single Arm Mode Configuration](#single-arm-mode-configuration)
 
 # Overview
 
-This repository provides configuration file examples for Hex Controller. By using the `hf-bot-cfg-cli` tool, you can quickly switch the working mode of Hex Controller.
+This repository provides example configuration files for the Hex Controller. By using the `hf-bot-cfg-cli` tool, you can quickly switch the working mode of the Hex Controller.
 
-- **Since the functionality is actually provided by two different daemon processes, it is essential to synchronously modify both JSON files when configuring.**
+Usage:
 
-## Usage
-
-Basic command format:
 ```bash
-hf-bot-cfg-cli -c <json_path> --url ws://<controller_ip:port>
+hf-bot-cfg-cli -c <json_path>/backend_config.json --url ws://<controller_ip>:8404
+
+hf-bot-cfg-cli -c <json_path>/backend_config.json --url ws://<controller_ip>:9404
 ```
 
-## Standard Mode Examples
+## Chassis
+- [Ark](./base/ark_default/)
+- [MaverX4](./base/maver_x4_default/)
+- [TriggerA3](./base/trigger_a3_default/)
 
-### CanHub Mode
-```bash
-hf-bot-cfg-cli -c ./can_hub/backend_config.json --url ws://<ip>:8404
+## Special Modes
+- [CanHub Mode](./can_hub)
+  - If you want to prevent automatic power output, set the `"power_on"` parameter in "backend_config.json" to `false`.
 
-hf-bot-cfg-cli -c ./can_hub/backend_config2.json --url ws://<ip>:9404
-```
-If you prefer not to automatically enable power output, you can set the `"power_on"` parameter to `false` in "backend_config.json".
+## Robotic Arm
+### Dual Arm Mode Configuration
 
-### Dual Arm Configuration
-
-**Enable arm `can0` port driver and CAN forwarding:**
+**Enable robotic arm `can0` port drive and CAN forwarding:**
 ```bash
 hf-bot-cfg-cli -c ./arm/<arm series>/backend_config.json --url ws://<ip>:8404
 ```
 
-**Enable arm `can1` port driver:**
+**Enable robotic arm `can1` port drive:**
 ```bash
 hf-bot-cfg-cli -c ./arm/<arm series>/backend_config2.json --url ws://<ip>:9404
 ```
 
-### Single Arm Configuration
+### Single Arm Mode Configuration
 
-**Enable arm `can0` port driver and CAN forwarding:**
+**Enable robotic arm `can0` port drive and CAN forwarding:**
 ```bash
 hf-bot-cfg-cli -c ./arm/<arm series>/backend_config.json --url ws://<ip>:8404
 ```
 
-**Disable arm `can1` port driver:**
+**Disable robotic arm `can1` port drive:**
 ```bash
 hf-bot-cfg-cli -c ./can_hub/backend_config2.json --url ws://<ip>:9404
 ```
