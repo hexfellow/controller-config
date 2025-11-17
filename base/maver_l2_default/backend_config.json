@@ -1,6 +1,6 @@
 {
   "language": 0,
-  "robot_type": 2,
+  "robot_type": 21,
   "robot_specific_configs": {
     "triple_omni_wheel_lr_driver_config": null,
     "bsc_rt4_pcw_vehicle_config": null,
@@ -10,10 +10,10 @@
     "ark2_lr_driver_config": null,
     "arm_overall_config": null,
     "base_overall_config": {
-      "remote_x_speed": 1.0,
-      "remote_y_speed": 1.0,
-      "remote_z_speed": 1.2,
-      "acc_limit": 1.5
+      "remote_x_speed": 0.7,
+      "remote_y_speed": 0.7,
+      "remote_z_speed": 1.0,
+      "acc_limit": 0.8
     }
   }
 }

@@ -1,7 +1,6 @@
 {
   "language": 0,
   "robot_type": 20,
-  "hand_type": null,
   "robot_specific_configs": {
     "triple_omni_wheel_lr_driver_config": null,
     "bsc_rt4_pcw_vehicle_config": null,
