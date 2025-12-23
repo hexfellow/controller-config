@@ -51,24 +51,24 @@ Then
 ## Robotic Arm
 ### Dual Arm Mode Configuration
 
-**Enable robotic arm `can0` port drive and CAN forwarding:**
+**Enable robotic arm `8439` port drive and CAN forwarding:**
 ```bash
 ./hbcc -c ./arm/<arm series>/backend_config.json --url ws://<ip>:8404
 ```
 
-**Enable robotic arm `can1` port drive:**
+**Enable robotic arm `9439` port drive:**
 ```bash
 ./hbcc -c ./arm/<arm series>/backend_config2.json --url ws://<ip>:9404
 ```
 
 ### Single Arm Mode Configuration
 
-**Enable robotic arm `can0` port drive and CAN forwarding:**
+**Enable robotic arm `8439` port drive and CAN forwarding:**
 ```bash
 ./hbcc -c ./arm/<arm series>/backend_config.json --url ws://<ip>:8404
 ```
 
-**Disable robotic arm `can1` port drive:**
+**Disable robotic arm `9439` port drive:**
 ```bash
 ./hbcc -c ./can_hub/backend_config2.json --url ws://<ip>:9404
 ```
