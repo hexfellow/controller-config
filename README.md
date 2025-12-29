@@ -1,9 +1,17 @@
+# Before you start
+
+Modifying the controller configuration file is a risky operation. If any issues arise due to improper use, the warranty will immediately be invalid, and we will not be responsible for any issues caused by **improper use**.
+
+Do not try anything in this repo unless you are very sure about what you are doing. **YOU HAVE BEEN WARNED**
+
 - [Overview](#overview)
   - [Chassis](#chassis)
   - [Special Modes](#special-modes)
   - [Robotic Arm](#robotic-arm)
     - [Dual Arm Mode Configuration](#dual-arm-mode-configuration)
     - [Single Arm Mode Configuration](#single-arm-mode-configuration)
+
+
 
 # Overview
 
