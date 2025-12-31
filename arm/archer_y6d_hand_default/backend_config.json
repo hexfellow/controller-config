@@ -1,0 +1,42 @@
+{
+  "language": 0,
+  "robot_type": 16,
+  "robot_specific_configs": {
+    "triple_omni_wheel_lr_driver_config": null,
+    "bsc_rt4_pcw_vehicle_config": null,
+    "bsc_rt_custom_pcw_vehicle_config": null,
+    "mark1_diff_bb_driver_config": null,
+    "pure_forward_only_config": {
+      "can_configs": [
+        {
+          "baudrate": 1000000,
+          "fd_baudrate": null
+        },
+        {
+          "baudrate": 1000000,
+          "fd_baudrate": null
+        },
+        {
+          "baudrate": 1000000,
+          "fd_baudrate": null
+        }
+      ],
+      "power_on": true
+    },
+    "ark2_lr_driver_config": null,
+    "arm_overall_config": {
+      "can_bus_override": "can0",
+      "default_disabled_mode": 0,
+      "hand_type": 1,
+      "zero_offsets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "base_overall_config": null
+  }
+}
