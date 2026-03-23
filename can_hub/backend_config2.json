@@ -7,6 +7,9 @@
     "bsc_rt_custom_pcw_vehicle_config": null,
     "mark1_diff_bb_driver_config": null,
     "pure_forward_only_config": null,
-    "arm_overall_config": null
-  }
+    "ark2_lr_driver_config": null,
+    "arm_overall_config": null,
+    "base_overall_config": null
+  },
+  "protocol_version": 5
 }
