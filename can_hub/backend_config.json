@@ -23,6 +23,7 @@
       ],
       "power_on": true
     },
-    "arm_overall_config": null
+    "arm_overall_config": null,
+    "base_overall_config": null
   }
 }
