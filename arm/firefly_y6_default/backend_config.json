@@ -1,6 +1,6 @@
 {
   "language": 0,
-  "robot_type": 16,
+  "robot_type": 27,
   "robot_specific_configs": {
     "triple_omni_wheel_lr_driver_config": null,
     "bsc_rt4_pcw_vehicle_config": null,
@@ -9,18 +9,19 @@
     "pure_forward_only_config": null,
     "ark2_lr_driver_config": null,
     "arm_overall_config": {
-      "can_bus_override": "can1",
+      "can_bus_override": "can0",
       "default_disabled_mode": 0,
-      "hand_type": 1,
-      "zero_offsets": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+      "hand_type": null,
+      "zero_offsets": [],
+      "default_gravity_acceleration": [
+        0.0,
+        0.0,
+        -9.8
       ]
     },
     "base_overall_config": null
-  }
+  },
+  "protocol_version": 7,
+  "broadcast_group_id": 0,
+  "broadcast_group_controller_id": 0
 }
