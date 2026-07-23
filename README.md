@@ -65,6 +65,8 @@ Then
 ./hbcc -c ./arm/<arm series>/backend_config2.json --url ws://<ip>:9404
 ```
 
-**If you want to disable the arm, set `robot_type` to `0` in the configuration file before pushing it.**
-**The new configuration will take effect after a restart.** 
-**The controller must be in a normal state to accept config replacement. For example, in a dual-arm configuration with only one arm connected, the controller will enter an error state and will not allow config changes.**
+- **If you want to disable the arm, set `robot_type` to `0` in the configuration file before pushing it.**
+
+- **The new configuration will take effect after a restart.** 
+
+- **The controller must be in a normal state to accept config replacement. For example, in a dual-arm configuration with only one arm connected, the controller will enter an error state and will not allow config changes.**
